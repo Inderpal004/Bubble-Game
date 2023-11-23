@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(129, 187, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel{
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#p-top{
+    width: 100%;
+    height: 70px;
+    background-color:rgb(76, 125, 76) ;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15%;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box{
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    border-radius: 4px;
+    color: #4c7d4c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+}
+
+#p-bottom{
+    width: 100%;
+    height: calc(100% - 70px);
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.bubble{
+    color: white;
+    height: 45px;
+    width: 45px;
+    background-color: #4c7d4c;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bubble:hover{
+    cursor: pointer;
+    background-color: #243e24;
+}
+
+@media screen and (max-width:576px){
+    #p-top {
+        justify-content: center;
+    }
+    
+    .cont {
+        margin: 0px 15px;
+        gap: 5px;
+    }
+
+    .box {
+        width: 30px;
+        height: 30px;
+    }
+}
